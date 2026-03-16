@@ -17,15 +17,19 @@ const About = () => {
             </h3>
             
             <p className="text-gray-600 leading-relaxed transform transition-all duration-300 hover:text-gray-800">
-              I'm a passionate and detail-oriented software engineer with a background in web development 
-              and user experience design. I love transforming ideas into functional, beautiful digital 
-              products that make an impact.
+              I am a Full Stack Developer with 4.5+ years of professional experience in designing and developing scalable web and mobile applications using Laravel, Node.js, React, and MongoDB.
             </p>
             
             <p className="text-gray-600 leading-relaxed transform transition-all duration-300 hover:text-gray-800">
-              With a blend of creativity and analytical thinking, I strive to build solutions that are 
-              not just technically sound but also user-friendly. What makes me unique is my ability to 
-              balance aesthetics with performance, always keeping the end-user in mind.
+              I have hands-on experience building admin dashboards, REST APIs, role-based authentication systems, payment gateway integrations, automation tools, and cloud-based solutions using AWS S3.
+            </p>
+
+            <p className="text-gray-600 leading-relaxed transform transition-all duration-300 hover:text-gray-800">
+              Throughout my career, I have worked on diverse platforms including social networking systems, service marketplaces, motorcycle rental platforms, graphic design tools, and healthcare management systems.
+            </p>
+
+            <p className="text-gray-600 leading-relaxed transform transition-all duration-300 hover:text-gray-800">
+              I enjoy solving complex problems and creating efficient, secure, and user-focused digital products that make a real impact.
             </p>
             
             <div className="pt-6">
@@ -51,7 +55,7 @@ const About = () => {
                 {[
                   { label: "Experience", value: "4.5+ Years" },
                   { label: "Location", value: "Surat" },
-                  { label: "Specialty", value: "Laravel & MERN" }
+                  { label: "Specialty", value: "Laravel & MERN Stack" }
                 ].map((fact, index) => (
                   <div key={fact.label} className={`flex items-center justify-between opacity-0 animate-fade-in-left delay-${500 + index * 100} group`}>
                     <span className="text-gray-600 group-hover:text-blue-600 transition-colors duration-200">{fact.label}</span>

@@ -40,8 +40,8 @@ const Skills = () => {
         "Push Notifications",
         "Cron Jobs",
         "Map Integration",
-        "Drag-and-Drop Interfaces",
-        "Admin Panel & Dashboard",
+        "Drag & Drop Interfaces",
+        "Admin Panels & Dashboards",
         "PDF Generation (MPDF, DOMPDF)",
         "Localization"
       ],

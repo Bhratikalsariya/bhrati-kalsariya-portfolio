@@ -48,7 +48,7 @@ const Hero = () => {
             Crafting elegant code and beautiful experiences with 4.5+ years of expertise
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 opacity-0 animate-fade-in-up delay-500">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4 opacity-0 animate-fade-in-up delay-500">
             <button
               onClick={scrollToAbout}
               className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover-glow flex items-center gap-2 group"
@@ -73,14 +73,14 @@ const Hero = () => {
             </button> */}
           </div>
           
-          <div className="opacity-0 animate-fade-in-up delay-700">
+          {/* <div className="opacity-0 animate-fade-in-up delay-700">
             <button
               onClick={scrollToAbout}
               className="p-2 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover-glow animate-floating"
             >
               <ArrowDown size={24} className="text-gray-600" />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
