@@ -75,7 +75,7 @@ const Certifications = () => {
     <section id="certifications" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Certifications
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
@@ -88,7 +88,7 @@ const Certifications = () => {
           {certifications.map((cert, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-t-4 border-yellow-500"
+              className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-t-4 border-yellow-500"
             >
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -97,7 +97,7 @@ const Certifications = () => {
 
                 <div className="flex-1">
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-lg font-bold text-gray-900 leading-tight">
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white leading-tight">
                       {cert.title}
                     </h3>
                     <CheckCircle className="text-green-500 flex-shrink-0 ml-2" size={20} />
@@ -122,7 +122,7 @@ const Certifications = () => {
           <div className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl border border-yellow-200">
             <Award className="text-yellow-600 mr-4" size={28} />
             <div className="text-left">
-              <p className="font-bold text-gray-900 text-lg">Certified Professional</p>
+              <p className="font-bold text-gray-900 dark:text-white text-lg">Certified Professional</p>
               <p className="text-gray-600">Committed to continuous learning and staying updated with industry trends</p>
             </div>
           </div>

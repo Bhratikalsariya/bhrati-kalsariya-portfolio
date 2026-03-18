@@ -72,14 +72,17 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section
+      id="contact"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Get In Touch
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
-          <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Let’s build something amazing together. I’d love to hear about your
             project and discuss how I can help bring your ideas to life.
           </p>
@@ -88,15 +91,15 @@ const Contact = () => {
         <div className="grid lg:grid-cols-1 gap-12 max-w-6xl mx-auto">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                <MessageCircle className="mr-3 text-blue-600" size={28} />
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+                <MessageCircle className="mr-3 text-blue-600 dark:text-blue-400" size={28} />
                 Let&apos;s Connect
               </h3>
-              <p className="text-gray-600 mb-8 leading-relaxed max-w-4xl">
-                I&apos;m always interested in new opportunities, exciting
-                projects, and meaningful connections. Whether you have a project
-                in mind or simply want to connect and talk about technology,
-                feel free to reach out.
+              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-4xl">
+                I&apos;m always interested in new opportunities, exciting projects,
+                and meaningful connections. Whether you have a project in mind or
+                simply want to connect and talk about technology, feel free to
+                reach out.
               </p>
             </div>
 
@@ -115,17 +118,19 @@ const Contact = () => {
                       ? "noopener noreferrer"
                       : undefined
                   }
-                  className="group block p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] border border-gray-100"
+                  className="group block p-6 bg-white dark:bg-gray-950 rounded-xl shadow-lg dark:shadow-gray-950/40 border border-gray-100 dark:border-gray-800 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02]"
                 >
                   <div
                     className={`w-12 h-12 rounded-lg bg-gradient-to-r ${item.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200`}
                   >
                     <item.icon className="text-white" size={24} />
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-200">
+
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
                     {item.label}
                   </h4>
-                  <p className="text-gray-600 text-sm break-words group-hover:text-gray-800 transition-colors duration-200">
+
+                  <p className="text-gray-600 dark:text-gray-300 text-sm break-words group-hover:text-gray-800 dark:group-hover:text-white transition-colors duration-200">
                     {item.value}
                   </p>
                 </a>
@@ -134,8 +139,8 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="mt-20 text-center border-t border-gray-200 pt-12">
-          <p className="text-gray-600 mb-4">
+        <div className="mt-20 text-center border-t border-gray-200 dark:border-gray-800 pt-12">
+          <p className="text-gray-600 dark:text-gray-400 mb-4">
             © {new Date().getFullYear()} Bhrati Kalsariya. All rights reserved.
           </p>
         </div>

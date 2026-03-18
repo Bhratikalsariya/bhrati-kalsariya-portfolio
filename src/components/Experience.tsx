@@ -86,15 +86,19 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section
+      id="experience"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-950 transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 opacity-0 animate-fade-in-up">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Work Experience
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6 animate-gradient"></div>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            My professional journey in web development, working with amazing teams to build impactful solutions
+          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            My professional journey in web development, working with amazing teams
+            to build impactful solutions
           </p>
         </div>
 
@@ -102,7 +106,7 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-500 border-l-4 border-blue-500 hover-lift opacity-0 animate-fade-in-${index % 2 === 0 ? 'left' : 'right'} delay-${index * 200}`}
+              className={`bg-white dark:bg-gray-900 rounded-xl shadow-lg dark:shadow-gray-950/40 border border-gray-100 dark:border-gray-800 p-8 hover:shadow-xl transition-all duration-500 border-l-4 border-l-blue-500 hover-lift opacity-0 animate-fade-in-${index % 2 === 0 ? "left" : "right"} delay-${index * 200}`}
             >
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                 <div className="flex items-center space-x-4 mb-4 lg:mb-0 group">
@@ -110,49 +114,57 @@ const Experience = () => {
                     <Building className="text-white" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200">{exp.position}</h3>
-                    <p className="text-blue-600 font-semibold group-hover:text-purple-600 transition-colors duration-200">{exp.company}</p>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+                      {exp.position}
+                    </h3>
+                    <p className="text-blue-600 dark:text-blue-400 font-semibold group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-200">
+                      {exp.company}
+                    </p>
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-gray-600">
-                  <div className="flex items-center hover:text-blue-600 transition-colors duration-200">
+                <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-gray-600 dark:text-gray-300">
+                  <div className="flex items-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                     <Calendar size={16} className="mr-2" />
                     {exp.duration}
                   </div>
-                  <div className="flex items-center hover:text-blue-600 transition-colors duration-200">
+                  <div className="flex items-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                     <MapPin size={16} className="mr-2" />
                     {exp.location}
                   </div>
-                  <span className={`px-3 py-1 rounded-full text-xs font-medium transition-all duration-300 hover:scale-105 ${exp.type === 'Training'
-                      ? 'bg-orange-100 text-orange-800 hover:bg-orange-200'
-                      : 'bg-green-100 text-green-800 hover:bg-green-200'
-                    }`}>
+                  <span
+                    className={`px-3 py-1 rounded-full text-xs font-medium transition-all duration-300 hover:scale-105 ${exp.type === "Training"
+                        ? "bg-orange-100 text-orange-800 hover:bg-orange-200 dark:bg-orange-900/30 dark:text-orange-300 dark:hover:bg-orange-900/50"
+                        : "bg-green-100 text-green-800 hover:bg-green-200 dark:bg-green-900/30 dark:text-green-300 dark:hover:bg-green-900/50"
+                      }`}
+                  >
                     {exp.type}
                   </span>
                 </div>
               </div>
 
               <div className="mb-6">
-                <ul className="list-disc pl-5 space-y-2 text-gray-600 leading-relaxed">
+                <ul className="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-300 leading-relaxed">
                   {exp.description.map((point, pointIndex) => (
-                    <li key={pointIndex}>
+                    <li
+                      key={pointIndex}
+                      className="hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
+                    >
                       {point}
                     </li>
                   ))}
                 </ul>
               </div>
-              {/* <p className="text-gray-600 mb-6 leading-relaxed hover:text-gray-800 transition-colors duration-200">
-                {exp.description}
-              </p> */}
 
               <div>
-                <h4 className="text-sm font-semibold text-gray-900 mb-3">Technologies Used:</h4>
+                <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">
+                  Technologies Used:
+                </h4>
                 <div className="flex flex-wrap gap-2">
                   {exp.technologies.map((tech, techIndex) => (
                     <span
                       key={tech}
-                      className={`px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 cursor-default opacity-0 animate-fade-in-up delay-${index * 200 + techIndex * 50}`}
+                      className={`px-3 py-1 bg-blue-50 dark:bg-gray-800 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 cursor-default opacity-0 animate-fade-in-up delay-${index * 200 + techIndex * 50}`}
                     >
                       {tech}
                     </span>

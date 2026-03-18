@@ -78,15 +78,19 @@ const Skills = () => {
 
 
   return (
-    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section
+      id="skills"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 opacity-0 animate-fade-in-up">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Skills & Technologies
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6 animate-gradient"></div>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            A comprehensive toolkit for building modern web applications and creating engaging user experiences
+          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            A comprehensive toolkit for building modern web applications and
+            creating engaging user experiences
           </p>
         </div>
 
@@ -94,13 +98,17 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div
               key={category.title}
-              className={`bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-500 hover:scale-105 transform hover-lift opacity-0 animate-fade-in-up delay-${index * 200}`}
+              className={`bg-white dark:bg-gray-950 rounded-xl shadow-lg dark:shadow-gray-950/40 border border-gray-100 dark:border-gray-800 p-6 hover:shadow-xl transition-all duration-500 hover:scale-105 transform hover-lift opacity-0 animate-fade-in-up delay-${index * 200}`}
             >
-              <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${category.color} flex items-center justify-center mb-4 transform transition-all duration-300 hover:scale-110 hover:rotate-12`}>
-                <span className="text-white font-bold text-lg">{category.title.charAt(0)}</span>
+              <div
+                className={`w-12 h-12 rounded-lg bg-gradient-to-r ${category.color} flex items-center justify-center mb-4 transform transition-all duration-300 hover:scale-110 hover:rotate-12`}
+              >
+                <span className="text-white font-bold text-lg">
+                  {category.title.charAt(0)}
+                </span>
               </div>
 
-              <h3 className="text-lg font-semibold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-200">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 transition-colors duration-200">
                 {category.title}
               </h3>
 
@@ -108,9 +116,11 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skill}
-                    className={`flex items-center justify-between p-2 bg-gray-50 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 transform hover:scale-105 opacity-0 animate-fade-in-right delay-${index * 200 + skillIndex * 50}`}
+                    className={`flex items-center justify-between p-2 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-gray-800 dark:hover:to-gray-700 transition-all duration-300 transform hover:scale-105 opacity-0 animate-fade-in-right delay-${index * 200 + skillIndex * 50}`}
                   >
-                    <span className="text-gray-700 text-sm font-medium hover:text-blue-600 transition-colors duration-200">{skill}</span>
+                    <span className="text-gray-700 dark:text-gray-200 text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                      {skill}
+                    </span>
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                   </div>
                 ))}
