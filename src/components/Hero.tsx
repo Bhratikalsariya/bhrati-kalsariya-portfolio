@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-white dark:bg-gray-950 transition-colors duration-300"
+      className="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-white dark:bg-gray-950 transition-colors duration-300 mt-6"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 -z-10">
