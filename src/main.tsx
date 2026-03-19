@@ -8,7 +8,7 @@ import { ThemeProvider } from "next-themes";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
-      <BrowserRouter basename="/bhrati-kalsariya-portfolio">
+      <BrowserRouter>
         <App />
       </BrowserRouter>
     </ThemeProvider>
