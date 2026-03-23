@@ -26,20 +26,6 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: Mail,
-      label: "Email",
-      value: "bhratikalsariya@gmail.com",
-      href: "mailto:bhratikalsariya@gmail.com",
-      color: "from-blue-500 to-blue-600"
-    },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+91 8347837580",
-      href: "tel:+918347837580",
-      color: "from-green-500 to-green-600"
-    },
-    {
       icon: Linkedin,
       label: "LinkedIn",
       value: "Connect on LinkedIn",
@@ -47,12 +33,19 @@ const Contact = () => {
       color: "from-blue-600 to-blue-700"
     },
     {
+      icon: Mail,
+      label: "Email",
+      value: "bhratikalsariya@gmail.com",
+      href: "mailto:bhratikalsariya@gmail.com",
+      color: "from-blue-500 to-blue-600"
+    },
+    {
       icon: MapPin,
       label: "Location",
       value: "Katargam, Surat - 395004",
       href: "https://www.google.com/maps/search/?api=1&query=Katargam,+Surat,+395004",
       color: "from-purple-500 to-purple-600"
-    }
+    },
   ];
 
   useEffect(() => {
@@ -91,7 +84,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-1 gap-12 max-w-6xl mx-auto">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+              <h3 className="justify-center text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
                 <MessageCircle className="mr-3 text-blue-600 dark:text-blue-400" size={28} />
                 Let&apos;s Connect
               </h3>
@@ -103,7 +96,7 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
               {contactInfo.map((item, index) => (
                 <a
                   key={index}

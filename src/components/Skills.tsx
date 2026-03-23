@@ -24,7 +24,6 @@ const Skills = () => {
         "Masonry Layout",
         "Toastr",
         "SweetAlert",
-        "Pintura Editor"
       ],
       color: "from-purple-500 to-purple-600"
     },
@@ -33,7 +32,6 @@ const Skills = () => {
       skills: [
         "RESTful APIs",
         "API Integration",
-        "API Documentation",
         "Multiple Database Connections",
         "JWT Authentication",
         "Role-Based Access Control (RBAC)",
@@ -51,7 +49,8 @@ const Skills = () => {
         "Dynamic Map Markers (Lat/Lng)",
         "Push Notifications",
         "Facebook / Instagram / Twitter Integration",
-        "Post Scheduling System"
+        "Post Scheduling System",
+        "Pintura Editor"
       ],
       color: "from-pink-500 to-pink-600"
     },
@@ -73,7 +72,8 @@ const Skills = () => {
       skills: [
         "MySQL",
         "MongoDB",
-        "AWS S3"
+        "AWS S3",
+        "Firebase",
       ],
       color: "from-teal-500 to-teal-600"
     },
@@ -82,8 +82,6 @@ const Skills = () => {
       skills: [
         "Apache",
         "Nginx",
-        "Ubuntu",
-        "Windows",
         "XAMPP",
         "Laragon",
         "PuTTY",
@@ -101,16 +99,6 @@ const Skills = () => {
       ],
       color: "from-indigo-500 to-indigo-600"
     },
-    {
-      title: "Design & Tools",
-      skills: [
-        "Figma",
-        "Canva",
-        "Adobe XD",
-        "Kittl"
-      ],
-      color: "from-yellow-500 to-yellow-600"
-    }
   ];
 
 
@@ -166,12 +154,6 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center opacity-0 animate-scale-in delay-800">
-          <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 animate-pulse-glow">
-            <span className="mr-2 animate-bounce">💼</span>
-            4.5+ Years of Professional Experience
-          </div>
-        </div>
       </div>
     </section>
   );

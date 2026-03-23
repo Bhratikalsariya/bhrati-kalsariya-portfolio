@@ -14,7 +14,7 @@ const Experience = () => {
       "Designed and implemented admin panels with Role-Based Access Control (RBAC) for secure system management.",
       "Built and optimized RESTful APIs to improve response time and system efficiency.",
       "Integrated third-party services including Stripe payment gateway and AWS S3 for secure file storage.",
-      "Implemented drag-and-drop functionality using Konva.js for interactive UI features.",
+      "Implemented Canva like functionality using Konva.js for interactive UI features.",
       "Worked on AI-based integrations using external APIs for image generation and automation.",
       "Collaborated with clients and cross-functional teams to deliver projects within deadlines.",
       "Continuously improved application performance, security, and user experience across projects."
@@ -33,7 +33,7 @@ const Experience = () => {
   },
   {
     company: "Elaunch Solutions",
-    position: "Laravel Developer",
+    position: "React + Laravel Developer",
     duration: "2021 – 2023",
     location: "Surat, India",
     type: "Full-time",
@@ -62,7 +62,7 @@ const Experience = () => {
   },
   {
     company: "Elaunch Solutions",
-    position: "Laravel Developer & React Trainee",
+    position: "React + Laravel Internship",
     duration: "6 Months",
     location: "Surat, India",
     type: "Training",

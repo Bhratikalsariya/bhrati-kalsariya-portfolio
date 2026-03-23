@@ -3,43 +3,7 @@ import { ExternalLink, Github, Code, Zap } from "lucide-react";
 
 const Projects = () => {
   const projects = [
-  {
-    name: "Hospital Management System",
-    role: "Full Stack Developer",
-    description:
-      "MERN-based healthcare platform for managing patients, appointments, and hospital operations.",
-    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "REST APIs"],
-    link: null,
-    features: [
-      "Developed patient record management system",
-      "Implemented appointment scheduling workflow",
-      "Built admin dashboard for hospital operations",
-      "Designed REST APIs for managing patient and doctor data",
-      "Optimized system for scalable healthcare data handling"
-    ]
-  },
-  {
-    name: "Paxform",
-    role: "Full Stack Developer",
-    description:
-      "Dynamic form management platform for storing personal data, documents, and digital workflows.",
-    technologies: [
-      "React.js",
-      "Laravel",
-      "Stripe",
-      "REST APIs",
-      "MPDF",
-      "DOMPDF"
-    ],
-    link: null,
-    features: [
-      "Developed admin and organization panel with role-based access",
-      "Built drag-and-drop form builder interface",
-      "Integrated Stripe payment gateway for subscriptions",
-      "Implemented PDF generation using MPDF and DOMPDF",
-      "Enabled digital form filling, signing, and sharing"
-    ]
-  },
+    
   {
     name: "Pencila (Online Design Platform)",
     role: "Backend Developer",
@@ -62,43 +26,29 @@ const Projects = () => {
       "Integrated AI services for design automation"
     ]
   },
+  
   {
-    name: "Massttr (Service Marketplace APIs)",
-    role: "API Developer",
+    name: "Paxform",
+    role: "Full Stack Developer",
     description:
-      "Backend API system for connecting service providers and users in a marketplace platform.",
+      "Dynamic form management platform for storing personal data, documents, and digital workflows.",
     technologies: [
+      "React.js",
       "Laravel",
+      "Stripe",
       "REST APIs",
-      "JavaScript",
-      "jQuery",
-      "AJAX",
-      "Push Notifications"
+      "MPDF",
+      "DOMPDF"
     ],
     link: null,
     features: [
-      "Developed secure REST APIs for mobile application integration",
-      "Implemented service provider registration and onboarding APIs",
-      "Built map-based location selection using latitude and longitude",
-      "Integrated push notifications for real-time updates",
-      "Enabled localization for multi-language support"
+      "Developed admin and organization panel with role-based access",
+      "Built drag-and-drop form builder interface",
+      "Integrated Stripe payment gateway for subscriptions",
+      "Implemented PDF generation using MPDF and DOMPDF",
+      "Enabled digital form filling, signing, and sharing"
     ]
-  },
-  {
-    name: "Small Circle (Social & Chat Platform)",
-    role: "Backend Developer",
-    description:
-      "Social and chat-based platform with automated content scheduling features.",
-    technologies: ["Laravel", "Cron Jobs", "Bootstrap"],
-    link: null,
-    features: [
-      "Implemented cron-based post scheduling automation",
-      "Developed admin panel for content and user management",
-      "Optimized content publishing workflow",
-      "Built backend logic for scheduled operations"
-    ]
-  },
-  {
+  },{
     name: "Motogino (Motorcycle Rental Platform)",
     role: "Full Stack Developer",
     description:
@@ -125,7 +75,60 @@ const Projects = () => {
       "Integrated Firebase for notifications",
       "Implemented backend workflows for support coordination"
     ]
-  }
+  },
+  
+  {
+    name: "Small Circle (Social & Chat Platform)",
+    role: "Backend Developer",
+    description:
+      "Social and chat-based platform with automated content scheduling features.",
+    technologies: ["Laravel", "Cron Jobs", "Bootstrap"],
+    link: null,
+    features: [
+      "Implemented cron-based post scheduling automation",
+      "Developed admin panel for content and user management",
+      "Optimized content publishing workflow",
+      "Built backend logic for scheduled operations"
+    ]
+  },
+  {
+    name: "Massttr (Service Marketplace APIs)",
+    role: "API Developer",
+    description:
+      "Backend API system for connecting service providers and users in a marketplace platform.",
+    technologies: [
+      "Laravel",
+      "REST APIs",
+      "JavaScript",
+      "jQuery",
+      "AJAX",
+      "Push Notifications"
+    ],
+    link: null,
+    features: [
+      "Developed secure REST APIs for mobile application integration",
+      "Implemented service provider registration and onboarding APIs",
+      "Built map-based location selection using latitude and longitude",
+      "Integrated push notifications for real-time updates",
+      "Enabled localization for multi-language support"
+    ]
+  },
+  {
+    name: "Hospital Management System",
+    role: "Full Stack Developer",
+    description:
+      "MERN-based healthcare platform for managing patients, appointments, and hospital operations.",
+    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "REST APIs"],
+    link: null,
+    features: [
+      "Developed patient record management system",
+      "Implemented appointment scheduling workflow",
+      "Built admin dashboard for hospital operations",
+      "Designed REST APIs for managing patient and doctor data",
+      "Optimized system for scalable healthcare data handling"
+    ]
+  },
+  
 ];
 
 
