@@ -88,7 +88,7 @@ const Contact = () => {
                 <MessageCircle className="mr-3 text-blue-600 dark:text-blue-400" size={28} />
                 Let&apos;s Connect
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-4xl">
+              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-center">
                 I&apos;m always interested in new opportunities, exciting projects,
                 and meaningful connections. Whether you have a project in mind or
                 simply want to connect and talk about technology, feel free to
