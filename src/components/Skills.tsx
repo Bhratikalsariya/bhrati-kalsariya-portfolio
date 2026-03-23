@@ -4,73 +4,110 @@ const Skills = () => {
     {
       title: "Languages & Frameworks",
       skills: [
-        "React.js",
-        "JavaScript (ES6+)",
-        "HTML5",
-        "CSS3",
-        "Bootstrap",
-        "jQuery",
+        "PHP",
         "Laravel",
+        "JavaScript",
+        "React.js",
         "Node.js",
         "Express.js"
       ],
       color: "from-blue-500 to-blue-600"
     },
     {
-      title: "API & Authentication",
+      title: "Frontend & UI",
       skills: [
-        "RESTful APIs",
-        "JWT Authentication",
-        "Role-Based Access Control (RBAC)",
-        "API Integration",
-        "Secure Authentication Systems"
+        "jQuery",
+        "AJAX",
+        "Bootstrap",
+        "Drag & Drop Interfaces",
+        "Konva.js",
+        "Masonry Layout",
+        "Toastr",
+        "SweetAlert",
+        "Pintura Editor"
       ],
       color: "from-purple-500 to-purple-600"
     },
     {
-      title: "Database",
+      title: "Backend & APIs",
       skills: [
-        "MySQL",
-        "MongoDB",
-        "Database Design",
-        "Query Optimization"
+        "RESTful APIs",
+        "API Integration",
+        "API Documentation",
+        "Multiple Database Connections",
+        "JWT Authentication",
+        "Role-Based Access Control (RBAC)",
+        "Socialite (Google Login)",
+        "Socket.io"
       ],
       color: "from-green-500 to-green-600"
     },
     {
-      title: "Features & Integrations",
+      title: "Payments & Integrations",
       skills: [
         "Stripe Payment Gateway",
+        "Razorpay Integration",
+        "Map API Integration",
+        "Dynamic Map Markers (Lat/Lng)",
         "Push Notifications",
-        "Cron Jobs & Automation",
-        "Google Maps API Integration",
-        "Drag & Drop Interfaces (Konva.js)",
-        "Admin Panel & Dashboard Development",
-        "PDF Generation (MPDF, DOMPDF)",
-        "Localization / Multi-language Support",
-        "Image & File Upload Handling (AWS S3)"
-      ],
-      color: "from-orange-500 to-orange-600"
-    },
-    {
-      title: "Development Tools",
-      skills: [
-        "Git",
-        "GitHub",
-        "Bitbucket",
-        "AWS S3",
-        "Version Control",
-        "Agile Development"
+        "Facebook / Instagram / Twitter Integration",
+        "Post Scheduling System"
       ],
       color: "from-pink-500 to-pink-600"
     },
     {
-      title: "Utilities & Editors",
+      title: "Admin & Platform Features",
       skills: [
-        "VS Code",
-        "Postman",
-        "Chrome DevTools",
-        "npm / yarn"
+        "Admin Panel Development",
+        "Dashboard Management",
+        "Cron Jobs",
+        "PDF Generation (mPDF, DOMPDF)",
+        "Excel Export",
+        "Localization",
+        "AWS S3 File Handling"
+      ],
+      color: "from-orange-500 to-orange-600"
+    },
+    {
+      title: "Databases & Cloud",
+      skills: [
+        "MySQL",
+        "MongoDB",
+        "AWS S3"
+      ],
+      color: "from-teal-500 to-teal-600"
+    },
+    {
+      title: "DevOps & Environment",
+      skills: [
+        "Apache",
+        "Nginx",
+        "Ubuntu",
+        "Windows",
+        "XAMPP",
+        "Laragon",
+        "PuTTY",
+        "Termius"
+      ],
+      color: "from-gray-500 to-gray-600"
+    },
+    {
+      title: "Version Control",
+      skills: [
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Bitbucket"
+      ],
+      color: "from-indigo-500 to-indigo-600"
+    },
+    {
+      title: "Design & Tools",
+      skills: [
+        "Figma",
+        "Canva",
+        "Adobe XD",
+        "Kittl"
       ],
       color: "from-yellow-500 to-yellow-600"
     }

@@ -3,166 +3,130 @@ import { ExternalLink, Github, Code, Zap } from "lucide-react";
 
 const Projects = () => {
   const projects = [
-    {
-      name: "Small Circle",
-      role: "Backend Developer",
-      description:
-        "Developed and managed the admin panel for a social and chat-based platform. Implemented a post scheduling module using Laravel cron jobs to automate timed post publishing and improve content management efficiency.",
-      technologies: ["Laravel", "HTML", "CSS", "Bootstrap", "Cron Jobs"],
-      link: null,
-      features: [
-        "Post scheduling automation using cron jobs",
-        "Admin panel for content and user management",
-        "Improved post publishing workflow",
-        "Custom backend logic for scheduled operations"
-      ]
-    },
-    {
-      name: "Massttr",
-      role: "API Developer",
-      description:
-        "Contributed to the development of Android and iOS application APIs connecting service seekers with service providers. Built registration APIs, localization features, and map-based location selection for mobile integration.",
-      technologies: [
-        "Laravel",
-        "REST APIs",
-        "HTML",
-        "CSS",
-        "Bootstrap",
-        "JavaScript",
-        "jQuery",
-        "AJAX",
-        "Push Notifications",
-        "Localization"
-      ],
-      link: null,
-      features: [
-        "Service provider registration APIs",
-        "Map-based location picker with latitude/longitude capture",
-        "Push notification integration",
-        "Localization and multi-language support",
-        "API support for mobile app communication"
-      ]
-    },
-    {
-      name: "Motogino",
-      role: "Full Stack Developer",
-      description:
-        "Developed website and admin panel features for a motorcycle rental platform. Implemented CRUD operations, listing and filtering functionality, and supported backend and frontend development for platform management.",
-      technologies: [
-        "Laravel",
-        "React.js",
-        "HTML",
-        "CSS",
-        "Bootstrap",
-        "Chat System"
-      ],
-      link: null,
-      features: [
-        "Admin panel with CRUD functionality",
-        "Vehicle listing and filtering features",
-        "Integrated chat system",
-        "Responsive frontend development",
-        "Backend support for rental platform operations"
-      ]
-    },
-    {
-      name: "Paxform",
-      role: "Frontend & Backend Developer",
-      description:
-        "Worked on a dynamic form management platform for storing personal data, forms, and signed documents. Developed admin and organization panels, form builder functionality, PDF generation, and Stripe payment integration.",
-      technologies: [
-        "React.js",
-        "Laravel",
-        "HTML",
-        "CSS",
-        "Bootstrap",
-        "Stripe",
-        "Push Notifications",
-        "Cron Jobs",
-        "Drag & Drop",
-        "MPDF",
-        "DOMPDF",
-        "REST APIs"
-      ],
-      link: null,
-      features: [
-        "Admin and organization panel development",
-        "Drag-and-drop form builder",
-        "PDF generation using MPDF and DOMPDF",
-        "Stripe payment integration",
-        "Digital form filling, signing, and sharing"
-      ]
-    },
-    {
-      name: "Cyber B.A.A.P.",
-      role: "Backend Developer",
-      description:
-        "Contributed to the backend development of an anti-cyberbullying platform focused on reporting, awareness, and counseling support. Built secure backend functionality for reporting workflows, dashboard operations, and scalable integrations.",
-      technologies: [
-        "Laravel",
-        "MySQL",
-        "REST APIs",
-        "Firebase",
-        "Cron Jobs"
-      ],
-      link: null,
-      // link: "https://www.cyberbaap.org",
-      features: [
-        "Cyberbullying incident reporting system",
-        "Admin dashboard and case tracking tools",
-        "Firebase-based notification support",
-        "Support for school and corporate integrations",
-        "Backend workflows for expert and counseling coordination"
-      ]
-    },
-    {
-      name: "Pencila",
-      role: "Backend Developer",
-      description:
-        "Worked on the backend of an online graphic design platform used to create templates, posts, ads, and stories. Managed APIs, AI credit tracking, subscription features, template handling, and backend integrations with AI services.",
-      technologies: [
-        "Laravel",
-        "PHP",
-        "MySQL",
-        "REST APIs",
-        "Stripe",
-        "Konva.js",
-        "MPDF",
-        "DOMPDF",
-        "AWS S3"
-      ],
-      link: null,
-      // link: "https://pencila.com",
-      features: [
-        "AI-powered design platform backend development",
-        "Subscription and Stripe payment integration",
-        "User account and AI credit management",
-        "Template and media management",
-        "Integration with AI-based design services"
-      ]
-    },
-    {
-      name: "Hospital Management System",
-      role: "Full Stack Developer",
-      description:
-        "Developed a hospital management platform using the MERN stack. Implemented patient record management, appointment scheduling, admin dashboard functionality, and REST APIs for healthcare operations.",
-      technologies: [
-        "MongoDB",
-        "Express.js",
-        "React.js",
-        "Node.js",
-        "REST APIs"
-      ],
-      link: null,
-      features: [
-        "Patient record management",
-        "Appointment scheduling system",
-        "Admin dashboard features",
-        "REST API development",
-        "Healthcare data management workflows"
-      ]
-    }
-  ];
+  {
+    name: "Hospital Management System",
+    role: "Full Stack Developer",
+    description:
+      "MERN-based healthcare platform for managing patients, appointments, and hospital operations.",
+    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "REST APIs"],
+    link: null,
+    features: [
+      "Developed patient record management system",
+      "Implemented appointment scheduling workflow",
+      "Built admin dashboard for hospital operations",
+      "Designed REST APIs for managing patient and doctor data",
+      "Optimized system for scalable healthcare data handling"
+    ]
+  },
+  {
+    name: "Paxform",
+    role: "Full Stack Developer",
+    description:
+      "Dynamic form management platform for storing personal data, documents, and digital workflows.",
+    technologies: [
+      "React.js",
+      "Laravel",
+      "Stripe",
+      "REST APIs",
+      "MPDF",
+      "DOMPDF"
+    ],
+    link: null,
+    features: [
+      "Developed admin and organization panel with role-based access",
+      "Built drag-and-drop form builder interface",
+      "Integrated Stripe payment gateway for subscriptions",
+      "Implemented PDF generation using MPDF and DOMPDF",
+      "Enabled digital form filling, signing, and sharing"
+    ]
+  },
+  {
+    name: "Pencila (Online Design Platform)",
+    role: "Backend Developer",
+    description:
+      "AI-powered graphic design platform for creating templates, posts, and marketing creatives.",
+    technologies: [
+      "Laravel",
+      "REST APIs",
+      "Stripe",
+      "AWS S3",
+      "Konva.js",
+      "MPDF"
+    ],
+    link: null,
+    features: [
+      "Developed backend APIs for template and media management",
+      "Implemented Stripe-based subscription and payment system",
+      "Managed AWS S3 for file storage and media handling",
+      "Handled AI credit tracking and user account management",
+      "Integrated AI services for design automation"
+    ]
+  },
+  {
+    name: "Massttr (Service Marketplace APIs)",
+    role: "API Developer",
+    description:
+      "Backend API system for connecting service providers and users in a marketplace platform.",
+    technologies: [
+      "Laravel",
+      "REST APIs",
+      "JavaScript",
+      "jQuery",
+      "AJAX",
+      "Push Notifications"
+    ],
+    link: null,
+    features: [
+      "Developed secure REST APIs for mobile application integration",
+      "Implemented service provider registration and onboarding APIs",
+      "Built map-based location selection using latitude and longitude",
+      "Integrated push notifications for real-time updates",
+      "Enabled localization for multi-language support"
+    ]
+  },
+  {
+    name: "Small Circle (Social & Chat Platform)",
+    role: "Backend Developer",
+    description:
+      "Social and chat-based platform with automated content scheduling features.",
+    technologies: ["Laravel", "Cron Jobs", "Bootstrap"],
+    link: null,
+    features: [
+      "Implemented cron-based post scheduling automation",
+      "Developed admin panel for content and user management",
+      "Optimized content publishing workflow",
+      "Built backend logic for scheduled operations"
+    ]
+  },
+  {
+    name: "Motogino (Motorcycle Rental Platform)",
+    role: "Full Stack Developer",
+    description:
+      "Web platform for managing motorcycle rentals with admin and user features.",
+    technologies: ["Laravel", "React.js", "Bootstrap"],
+    link: null,
+    features: [
+      "Developed admin panel with CRUD functionality",
+      "Implemented vehicle listing and filtering system",
+      "Built responsive UI for better user experience",
+      "Supported backend operations for rental management"
+    ]
+  },
+  {
+    name: "Cyber B.A.A.P. (Cyber Awareness Platform)",
+    role: "Backend Developer",
+    description:
+      "Platform focused on cyberbullying awareness, reporting, and support systems.",
+    technologies: ["Laravel", "MySQL", "REST APIs", "Firebase"],
+    link: null,
+    features: [
+      "Developed secure reporting system for incidents",
+      "Built admin dashboard for case tracking",
+      "Integrated Firebase for notifications",
+      "Implemented backend workflows for support coordination"
+    ]
+  }
+];
 
 
   return (

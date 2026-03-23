@@ -3,87 +3,85 @@ import { Calendar, MapPin, Building } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
-    {
-      company: "Sassy Infotech",
-      position: "Full Stack Developer",
-      duration: "2023 – Present",
-      location: "Surat, India",
-      type: "Full-time",
-      description: [
-        "Developing scalable web and mobile applications using Laravel and MERN stack.",
-        "Designed and implemented complete admin panels with role-based access control (RBAC).",
-        "Built and optimized RESTful APIs to improve performance and response time.",
-        "Integrated third-party services including Stripe payment gateway and AWS S3 for file storage.",
-        "Implemented drag-and-drop functionality using Konva.js for interactive UI features.",
-        "Integrated AI-based image generation using Python APIs.",
-        "Collaborated with clients and managed project tasks to ensure timely delivery.",
-        "Improved application performance, security, and overall user experience."
-      ],
-      technologies: [
-        "Laravel",
-        "PHP",
-        "MySQL",
-        "JavaScript",
-        "React.js",
-        "Node.js",
-        "Stripe",
-        "AWS S3",
-        "Konva.js",
-        "REST APIs"
-      ]
-    },
-    {
-      company: "Elaunch Solutions",
-      position: "Full Stack Developer",
-      duration: "2021 – 2023",
-      location: "Surat, India",
-      type: "Full-time",
-      description: [
-        "Developed dynamic web and mobile applications using Laravel and MERN stack.",
-        "Built secure REST APIs with JWT authentication and RBAC implementation.",
-        "Created admin dashboards with Excel import/export functionalities.",
-        "Implemented cron jobs for automation and background processing.",
-        "Developed PDF generation features using DOMPDF and MPDF.",
-        "Integrated map-based features using latitude and longitude (Google Maps API).",
-        "Debugged issues and enhanced system performance and existing features.",
-        "Collaborated with team members to deliver high-quality solutions on time."
-      ],
-      technologies: [
-        "Laravel",
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "MySQL",
-        "JavaScript",
-        "JWT",
-        "RBAC",
-        "DOMPDF",
-        "MPDF"
-      ]
-    },
-    {
-      company: "Elaunch Solutions",
-      position: "Full Stack Developer Trainee",
-      duration: "6 Months",
-      location: "Surat, India",
-      type: "Training",
-      description: [
-        "Completed intensive training in Laravel, React.js, and full-stack development.",
-        "Built CRUD applications and REST APIs from scratch.",
-        "Implemented authentication systems and responsive UI designs.",
-        "Gained practical experience in real-world project development workflows."
-      ],
-      technologies: [
-        "Laravel",
-        "React.js",
-        "PHP",
-        "JavaScript",
-        "MySQL",
-        "REST APIs"
-      ]
-    }
-  ];
+  {
+    company: "Sassy Infotech",
+    position: "Full Stack Developer",
+    duration: "2023 – Present",
+    location: "Surat, India",
+    type: "Full-time",
+    description: [
+      "Developing scalable web applications using Laravel and MERN stack with focus on performance and security.",
+      "Designed and implemented admin panels with Role-Based Access Control (RBAC) for secure system management.",
+      "Built and optimized RESTful APIs to improve response time and system efficiency.",
+      "Integrated third-party services including Stripe payment gateway and AWS S3 for secure file storage.",
+      "Implemented drag-and-drop functionality using Konva.js for interactive UI features.",
+      "Worked on AI-based integrations using external APIs for image generation and automation.",
+      "Collaborated with clients and cross-functional teams to deliver projects within deadlines.",
+      "Continuously improved application performance, security, and user experience across projects."
+    ],
+    technologies: [
+      "Laravel",
+      "React.js",
+      "Node.js",
+      "JavaScript",
+      "MySQL",
+      "Stripe",
+      "AWS S3",
+      "REST APIs",
+      "Konva.js"
+    ]
+  },
+  {
+    company: "Elaunch Solutions",
+    position: "Full Stack Developer",
+    duration: "2021 – 2023",
+    location: "Surat, India",
+    type: "Full-time",
+    description: [
+      "Developed full stack web applications using Laravel and MERN stack for multiple business use cases.",
+      "Built secure REST APIs with JWT authentication and Role-Based Access Control (RBAC).",
+      "Designed and developed admin dashboards with Excel import/export and reporting features.",
+      "Implemented cron jobs for background processing and automation of scheduled tasks.",
+      "Developed PDF generation functionality using DOMPDF and MPDF.",
+      "Integrated map-based features using Google Maps API with dynamic latitude and longitude handling.",
+      "Debugged and optimized existing systems to enhance performance and scalability.",
+      "Collaborated with development team to deliver high-quality and maintainable code."
+    ],
+    technologies: [
+      "Laravel",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "MySQL",
+      "JavaScript",
+      "JWT",
+      "RBAC",
+      "REST APIs"
+    ]
+  },
+  {
+    company: "Elaunch Solutions",
+    position: "Full Stack Developer Trainee",
+    duration: "6 Months",
+    location: "Surat, India",
+    type: "Training",
+    description: [
+      "Completed hands-on training in Laravel, React.js, and full stack development.",
+      "Built CRUD applications and REST APIs from scratch.",
+      "Implemented authentication systems and responsive UI designs.",
+      "Gained practical experience in real-world development workflows and team collaboration."
+    ],
+    technologies: [
+      "Laravel",
+      "React.js",
+      "PHP",
+      "JavaScript",
+      "MySQL",
+      "REST APIs"
+    ]
+  }
+];
 
   return (
     <section
